@@ -304,24 +304,55 @@
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <p class="h2 text-center mt-2 mb-2">FAQ</p>
+                <div class="card-body text-center">
+                    <div class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#answer1"
+                                aria-expanded="false" aria-controls="answer1">
+                            Как купить?
+                        </button>
+                        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#answer2"
+                                aria-expanded="false" aria-controls="answer2">
+                            Как доставить?
+                        </button>
+                        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#answer3"
+                                aria-expanded="false" aria-controls="answer3">
+                            Какая гарантия?
+                        </button>
+                    </div>
+                    <div class="collapse" id="answer1">
+                        <div class="card card-body">
+                            Чтобы приобрести товар вам необходимо перенести его в корзину.
+                        </div>
+                    </div>
+                    <div class="collapse" id="answer2">
+                        <div class="card card-body">
+                            Доставка осуществляется курьером транспортной компании или из точки самовывоза.
+                        </div>
+                    </div>
+                    <div class="collapse" id="answer3">
+                        <div class="card card-body">
+                            Гарантия 30 дней.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous"></script>
 
-    </div>
-
+        <script>
+            /* global bootstrap: false */
+            (function () {
+                'use strict'
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            })()
+        </script>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-
-<script>
-    /* global bootstrap: false */
-    (function () {
-        'use strict'
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-            new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    })()
-</script>
 </body>
 </html>
