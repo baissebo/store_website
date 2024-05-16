@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Catalog</title>
-    <!-- Bootstrap core CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -304,6 +304,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card">
                 <p class="h2 text-center mt-2 mb-2">FAQ</p>
                 <div class="card-body text-center">
@@ -338,21 +339,69 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-                crossorigin="anonymous"></script>
 
-        <script>
-            /* global bootstrap: false */
-            (function () {
-                'use strict'
-                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-                    new bootstrap.Tooltip(tooltipTriggerEl)
-                })
-            })()
-        </script>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Номер заказа</th>
+                    <th>Название товара</th>
+                    <th>Цена за штуку</th>
+                    <th>Количество</th>
+                    <th>Итоговая сумма</th>
+                    <th>Статус заказа</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ножницы "Zinger"</td>
+                    <td>450</td>
+                    <td>2</td>
+                    <td>900</td>
+                    <td><span class="badge bg-warning">Обработка</span></td>
+                <tr>
+                    <td>2</td>
+                    <td>Самокат "Xiaomi"</td>
+                    <td>25000</td>
+                    <td>1</td>
+                    <td>25000</td>
+                    <td><span class="badge bg-primary">Новый</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Электрическая зубная щетка "Braun"</td>
+                    <td>9999</td>
+                    <td>99</td>
+                    <td>989901</td>
+                    <td><span class="badge bg-danger">Отмена</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Фен "Dyson"</td>
+                    <td>50000</td>
+                    <td>3</td>
+                    <td>150000</td>
+                    <td><span class="badge bg-success">Обработан</span></td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+<script>
+    /* global bootstrap: false */
+    (function () {
+        'use strict'
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+            new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    })()
+</script>
 </main>
 </body>
 </html>
